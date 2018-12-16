@@ -1,0 +1,23 @@
+.m-mobile-nav {
+  position: absolute;
+  padding: 10rem 5rem 2rem 5rem;
+  display: inline-block;
+  background-color: rgba(50, 58, 69, 0.95);
+  right: -30rem;
+  transition: right $transition-style;
+  height: 100vh;
+
+  @media(min-width: $screen-md-min) {
+    display: none;
+  }
+
+  li {
+    display: block !important;
+  }
+
+
+  &.m-mobile-nav--active {
+    right: 0;
+  }
+
+}
