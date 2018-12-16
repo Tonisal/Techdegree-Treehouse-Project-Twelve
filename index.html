@@ -4,31 +4,70 @@
     <title>Techdegree Portfolio Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/dst/css/min/style.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <script src="assets/dst/js/scripts.js"></script>
 </head>
 <body>
-<div class="o-navigation">
-    <ul class="m-main-nav">
-        <li><a hef="#">Link 1</a></li>
-        <li><a hef="#">Link 1</a></li>
-        <li><a hef="#">Link 1</a></li>
-        <li><a hef="#">Link 1</a></li>
-        <li><a hef="#">Link 1</a></li>
-    </ul>
+<header>
+    <div class="o-navigation u-bg-color-dark-grey">
+        <ul class="m-main-nav">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">My Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
 
-    <button class="m-btn-mobile-menu">
-        <span></span>
-        <span></span>
-        <span></span>
-    </button>
+        <button class="m-btn-mobile-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
         <ul class="m-mobile-nav">
-            <li><a hef="#">Link 1</a></li>
-            <li><a hef="#">Link 1</a></li>
-            <li><a hef="#">Link 1</a></li>
-            <li><a hef="#">Link 1</a></li>
-            <li><a hef="#">Link 1</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">My Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </div>
-</div>
+    </div>
+</header>
+<main>
+    <div class="o-section o-hero-section">
+        <div class="content-container">
+            <h1>Hi, my name is Markus</h1>
+            <h2>I´m a frontend developer from Munich</h2>
+        </div>
+    </div>
+    <div id="about" class="o-section o-about u-bg-color-dark-grey u-text-color-white">
+        <div class="content-container">
+            <h2> Hi, nice to meet you!</h2>
+            <div class="m-collapsed-content">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                eirmod tempor invidunt ut labore et
+                dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                Stet
+                clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
+                amet,
+                consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+                erat,
+                sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+                no
+                sea takimata sanctus est Lorem ipsum dolor sit amet.
+            </div>
+
+            <div class="m-skills-container">
+
+            </div>
+        </div>
+    </div>
+    <div id="projects" class="o-section o-projects">
+        <div class="o-projects__projects-container">
+            <div class="content-container">
+                <div class="m-project-preview">
+                    <img src="https://placeimg.com/1000/666/any">
+                        <figcaption class="m-project-preview__text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam.</figcaption>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
 </body>
 </html>

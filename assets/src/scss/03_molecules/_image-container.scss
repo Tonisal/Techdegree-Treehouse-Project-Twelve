@@ -1,0 +1,12 @@
+.m-image-container {
+  display: inline-block;
+  overflow: hidden;
+
+  &.m-image-container--circular {
+    border: 3px solid $dark-grey;
+    border-radius: 50%;
+    img {
+      border-radius: 50%;
+    }
+  }
+}

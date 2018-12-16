@@ -1,13 +1,23 @@
 
 @import '00_utilities/variables';
+@import '00_utilities/helpers';
 
 @import '01_base/base';
 @import '01_base/grid';
 @import '01_base/reboot';
+@import '01_base/type';
 
 
 @import '03_molecules/btn-mobile-menu';
 @import '03_molecules/mobile-navigation';
 @import '03_molecules/main-nav';
+@import '03_molecules/collapsed-content';
+@import '03_molecules/image-container';
+@import '03_molecules/project-preview';
+@import '03_molecules/skills-container';
+
 
 @import '04_organisms/navigation';
+@import '04_organisms/hero-section';
+@import '04_organisms/section';
+@import '04_organisms/about';

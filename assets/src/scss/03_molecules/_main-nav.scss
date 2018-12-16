@@ -1,0 +1,21 @@
+.m-main-nav {
+  display: none;
+
+  @media(min-width: $screen-md-min) {
+    display: block;
+  }
+
+  li {
+    margin-left: 2rem;
+    display: inline-block;
+
+    a {
+      font-weight: $font-weight-bold;
+      font-size: 1.6rem;
+    }
+  }
+}
+
+li {
+
+}

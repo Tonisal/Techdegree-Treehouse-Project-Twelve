@@ -3,21 +3,26 @@
   padding: 10rem 5rem 2rem 5rem;
   display: inline-block;
   background-color: rgba(50, 58, 69, 0.95);
-  right: -30rem;
-  transition: right $transition-style;
+  right: 0;
+  transition: margin-right $transition-style;
   height: 100vh;
+  display: none;
 
   @media(min-width: $screen-md-min) {
     display: none;
   }
 
   li {
-    display: block !important;
+    display: block;
+
+    a {
+      font-size: 1.8rem;
+    }
   }
 
 
   &.m-mobile-nav--active {
-    right: 0;
+    display: block;
   }
 
 }

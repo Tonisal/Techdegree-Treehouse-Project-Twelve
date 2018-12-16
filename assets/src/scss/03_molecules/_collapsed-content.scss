@@ -1,0 +1,19 @@
+.m-collapsed-content {
+  font-size: 1.6rem;
+  overflow-y: hidden;
+  max-height: 10rem;
+  transition: max-height 0.2s ease-in-out;
+  hyphens: auto;
+  text-align: center;
+
+  &:after {
+    content: '';
+    display: block;
+    background-color: $black;
+  }
+
+
+  &.m-collapsed-content--active {
+    max-height: 100rem;
+  }
+}

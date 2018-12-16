@@ -1,0 +1,18 @@
+.o-navigation {
+  padding: 2rem;
+
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  width: 100%;
+
+  @media(min-width: $screen-md-min) {
+    padding-right: 4rem;
+    padding-left: 4rem;
+  }
+
+  li a {
+    color: $white;
+    text-transform: uppercase;
+  }
+}
