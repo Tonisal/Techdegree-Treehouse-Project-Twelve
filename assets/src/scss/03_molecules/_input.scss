@@ -1,0 +1,29 @@
+.m-input {
+  margin-bottom: 1.5rem;
+  position: relative;
+
+  input {
+    padding: 1.5rem;
+    width: 100%;
+    border-radius: 2.5rem;
+    border: none;
+    font-size: 1.6rem;
+
+    &:focus + label,
+    &:valid + label {
+      opacity: 0;
+    }
+  }
+
+  label {
+    position: absolute;
+    left: 1.5rem;
+    top: 30%;
+    color: black;
+    font-size: 1.6rem;
+    transition: left $transition-style, opacity $transition-style 0.2s;
+    white-space: nowrap;
+
+  }
+
+}

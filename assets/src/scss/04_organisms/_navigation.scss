@@ -1,5 +1,6 @@
 .o-navigation {
   padding: 2rem;
+  z-index: 20;
 
   display: flex;
   justify-content: flex-end;
@@ -14,5 +15,10 @@
   li a {
     color: $white;
     text-transform: uppercase;
+
+    &:active,
+    &:hover {
+      text-decoration: none;
+    }
   }
 }

@@ -8,11 +8,12 @@ $white: #fff;
 
 //Breakpoints
 
+$screen-sm-min: 576px;
 $screen-md-min: 768px;
 $screen-lg-min: 1200px;
 
 
-$transition-style: 0.2s linear;
+$transition-style: 0.2s ease-out;
 
 
 $font-weight-bold: 700;

@@ -11,9 +11,10 @@
 <header>
     <div class="o-navigation u-bg-color-dark-grey">
         <ul class="m-main-nav">
+            <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#projects">My Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <!--<li><a href="#contact">Contact</a></li>-->
         </ul>
 
         <button class="m-btn-mobile-menu">
@@ -22,6 +23,7 @@
             <span></span>
         </button>
         <ul class="m-mobile-nav">
+            <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#projects">My Projects</a></li>
             <li><a href="#contact">Contact</a></li>
@@ -30,7 +32,7 @@
     </div>
 </header>
 <main>
-    <div class="o-section o-hero-section">
+    <div id="home" class="o-section o-hero-section">
         <div class="content-container">
             <h1>Hi, my name is Markus</h1>
             <h2>I´m a frontend developer from Munich</h2>
@@ -53,7 +55,11 @@
             </div>
 
             <div class="m-skills-container">
+                <h3>Languages</h3>
+                HTML, Pug, Slim, CSS, Sass, Less
 
+                <h3>Tools</h3>
+                PhpStorm, Atom, Sublime, Github, Gitlab, Udemy, TeamTreehouse
             </div>
         </div>
     </div>
@@ -61,11 +67,50 @@
         <div class="o-projects__projects-container">
             <div class="content-container">
                 <div class="m-project-preview">
-                    <img src="https://placeimg.com/1000/666/any">
-                        <figcaption class="m-project-preview__text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam.</figcaption>
-                    </div>
+                    <img src="https://placeimg.com/1000/666/any" alt="project preview image">
+                    <figcaption class="m-project-preview__text">
+                        Lorem ipsum dolor sit amet, consetetur sadipscing
+                        elitr, sed diam.
+                        <a class="m-project-preview__link">Visit Github Repo</a>
+                    </figcaption>
+                </div>
+                <div class="m-project-preview">
+                    <img src="https://placeimg.com/1000/666/any" alt="project preview image">
+                    <figcaption class="m-project-preview__text">
+                        Lorem ipsum dolor sit amet, consetetur sadipscing
+                        elitr, sed diam.
+                        <a class="m-project-preview__link">Visit Github Repo</a>
+                    </figcaption>
+                </div>
+                <div class="m-project-preview">
+                    <img src="https://placeimg.com/1000/666/any" alt="project preview image">
+                    <figcaption class="m-project-preview__text">
+                        Lorem ipsum dolor sit amet, consetetur sadipscing
+                        elitr, sed diam.
+                        <a class="m-project-preview__link">Visit Github Repo</a>
+                    </figcaption>
+                </div>
+                <div class="m-project-preview">
+                    <img src="https://placeimg.com/1000/666/any" alt="project preview image">
+                    <figcaption class="m-project-preview__text">
+                        Lorem ipsum dolor sit amet, consetetur sadipscing
+                        elitr, sed diam.
+                        <a class="m-project-preview__link">Visit Github Repo</a>
+                    </figcaption>
                 </div>
             </div>
+        </div>
+    </div>
+    <div id="contact" class="o-section o-contact u-bg-color-dark-grey u-text-color-white">
+        <div class="content-container">
+            <h2>Wanna get some information about me, my projects or my skills? just contact me!</h2>
+            <form>
+                <div class="m-input"><input class="js-form-first-name" type="text" required><label>First Name</label></div>
+                <div class="m-input"><input class="js-form-last-name" type="text" required><label>Last Name</label></div>
+                <div class="m-input"><input class="js-form-subject" type="text" required><label>Subject</label></div>
+                <textarea class="js-form-text"></textarea>
+                <button class="js-submit-form" type="submit">send</button>
+            </form>
         </div>
     </div>
 </main>
