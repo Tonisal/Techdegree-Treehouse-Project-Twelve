@@ -6,6 +6,7 @@ const watch = require('gulp-watch');
 const cleanCSS = require('gulp-clean-css');
 const rename = require("gulp-rename");
 const concat = require('gulp-concat');
+const imagemin = require('gulp-imagemin');
 
 sass.compiler = require('node-sass');
 
@@ -26,9 +27,16 @@ gulp.task('concatJS', function() {
         .pipe(gulp.dest('assets/dst/js/'));
 });
 
+gulp.task('minifyImages', function() {
+    gulp.src('assets/src/images/*')
+        .pipe(imagemin())
+        .pipe(gulp.dest('assets/dst/images/'));
+});
+
 
 
 gulp.task('watch', function() {
+    gulp.watch('assets/src/images/**', ['minifyImages']);
     gulp.watch('assets/src/scss/**/*.scss', ['compileCSS']);
     gulp.watch('assets/src/js/*.js', ['concatJS']);
 });

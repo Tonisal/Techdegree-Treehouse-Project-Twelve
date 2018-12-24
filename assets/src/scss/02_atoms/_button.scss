@@ -1,0 +1,13 @@
+.a-btn {
+  padding: 1.5rem;
+  background-color: $white;
+  text-align: center;
+  color: $dark-grey;
+  border-radius: 2.8rem;
+
+  &.a-btn--centered {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}

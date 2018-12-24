@@ -47,8 +47,9 @@ function scrollToLinkPosition(event) {
 }
 
 function toggleCollapsedContent() {
-    $('.m-collapsed-content').click(function () {
+    $('.m-collapsed-content--toggle').click(function () {
         $(this).toggleClass('m-collapsed-content--active');
+        $('.m-collapsed-content').toggleClass('m-collapsed-content--active');
     });
 }
 
@@ -60,7 +61,7 @@ function navigationLinkHighlighting() {
         linkTargets.push($(this).attr('href').replace('#', ''));
     });
 
-    for(var i = 0; i < linksToHighlight.length; i++) {
+    for (var i = 0; i < linksToHighlight.length; i++) {
         var elementToAdd = linkTargets[i];
         elementPositions[elementToAdd] = $('#' + linkTargets[i]).offset().top - mainNavigationHeight;
     }
@@ -69,21 +70,12 @@ function navigationLinkHighlighting() {
         var currentScrollPosition = $(document).scrollTop();
         var elems = Object.keys(elementPositions);
 
-        for(var i = 0; i < elems.length; i++) {
+        for (var i = 0; i < elems.length; i++) {
             if (elementPositions[elems[i]] < currentScrollPosition) {
                 $('.m-main-nav li a').removeClass('m-main-nav__highlighted');
-                var selector ="a[href='#" + elems[i] + "']";
+                var selector = "a[href='#" + elems[i] + "']";
                 $(selector).addClass('m-main-nav__highlighted');
             }
         }
-    });
-}
-
-function submitContactForm() {
-    $('.js-submit-form').click(function() {
-        var firstName = $('.js-form-first-name').val();
-        var lastName = $('.js-form-last-name').val();
-        var subject = $('.js-form-subject').val();
-        var text = $('.js-form-text').val();
     });
 }
