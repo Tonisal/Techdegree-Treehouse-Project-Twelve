@@ -1,52 +1,70 @@
 .m-project-preview {
-  border-radius: 1.5rem;
-  overflow: hidden;
-  position: relative;
-  margin-bottom: 2.5rem;
+  display: flex;
+  flex-wrap: wrap;
 
-  @media(min-width: $screen-sm-min) {
-    flex-basis: calc(50% - (2.5rem / 2 ));
-    margin-right: 2.5rem;
+  .m-project-preview__item {
+    border-radius: 1.5rem;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 2.5rem;
 
-    &:nth-child(even) {
-      margin-right: 0;
+    @media(min-width: $screen-sm-min) {
+      flex-basis: calc(50% - (2.5rem / 2));
+      margin-right: 2.5rem;
+
+      &:nth-child(even) {
+        margin-right: 0;
+      }
     }
-  }
-
-  img {
-    transition: transform $transition-style;
-  }
-
-  .m-project-preview__text {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    color: $white;
-    background: transparent;
-    padding-right: 3rem;
-    padding-left: 3rem;
-    text-align: center;
-    opacity: 0;
-    transition: opacity $transition-style, transform $transition-style;
-    font-size: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
-
-  &:hover {
 
     img {
-      transform: scale(1.05);
+      transition: transform $transition-style;
     }
 
     .m-project-preview__text {
-      opacity: 1;
-      background-color: $dark-grey;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      color: $white;
+      background: transparent;
+      padding-right: 3rem;
+      padding-left: 3rem;
+      text-align: center;
+      opacity: 0;
+      transition: opacity $transition-style, transform $transition-style;
+      font-size: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .m-project-preview__link {
+      margin-top: 0.5rem;
+    }
+
+    &:hover {
+
+      img {
+        transform: scale(1.05);
+      }
+
+      .m-project-preview__text {
+        opacity: 1;
+        background-color: $dark-grey;
+
+        a {
+          color: $white;
+          text-decoration: underline;
+          transition: transform $transition-style;
+
+          &:hover {
+            transform: scale(1.05);
+          }
+        }
+      }
     }
   }
-
 }

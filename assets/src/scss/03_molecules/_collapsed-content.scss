@@ -36,7 +36,8 @@
   border-top: 0.8rem solid $white;
   border-left: 0.8rem solid $white;
   transform: rotate(-135deg);
-  transition: transform;
+  transition: transform $transition-style;
+  cursor: pointer;
 
   &.m-collapsed-content--active {
     transform: rotate(45deg);

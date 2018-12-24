@@ -3,7 +3,6 @@
 $(document).ready(function () {
     toggleMobileNavigation();
     scrollToLinkPosition();
-    toggleCollapsedContent();
     toggleNavigationMode();
     navigationLinkHighlighting();
 });
@@ -45,13 +44,6 @@ function scrollToLinkPosition(event) {
         }, 'slow');
 
 
-    });
-}
-
-function toggleCollapsedContent() {
-    $('.m-collapsed-content--toggle').click(function () {
-        $(this).toggleClass('m-collapsed-content--active');
-        $('.m-collapsed-content').toggleClass('m-collapsed-content--active');
     });
 }
 
@@ -118,3 +110,14 @@ $(document).ready(function () {
     });
 
 });
+$(document).ready(function() {
+    toggleCollapsedContent();
+});
+
+function toggleCollapsedContent() {
+    $('.m-collapsed-content--toggle').click(function () {
+        console.log('klick');
+        $(this).toggleClass('m-collapsed-content--active');
+        $('.m-collapsed-content').toggleClass('m-collapsed-content--active');
+    });
+}
