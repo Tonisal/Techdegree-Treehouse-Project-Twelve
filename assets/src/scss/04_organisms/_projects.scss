@@ -1,2 +1,17 @@
 .o-projects {
+  .o-projects__skills {
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h3 {
+      margin-bottom: 2rem;
+    }
+
+    ul {
+      list-style-type: circle;
+      margin-bottom: 3rem;
+    }
+  }
 }
